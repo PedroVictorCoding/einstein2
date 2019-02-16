@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".YoutubeEinsteinPlayer">
 
+
     <Button
         android:background="@color/lightRedOchre"
         android:textColor="@android:color/white"
@@ -33,5 +34,4 @@
                 android:layout_height="wrap_content" />
 
     </FrameLayout>
-
 </FrameLayout>

@@ -1,7 +1,7 @@
 package com.night.einstein;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -45,6 +45,7 @@ public class YoutubeEinsteinPlayer extends YouTubeBaseActivity {
 
     Button btnClose;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +64,8 @@ public class YoutubeEinsteinPlayer extends YouTubeBaseActivity {
                 startActivity(intent);
             }
         });
+
+
     }
     @Override
     public void onBackPressed() {

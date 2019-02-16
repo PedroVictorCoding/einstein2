@@ -30,10 +30,10 @@ public class articleView extends AppCompatActivity {
 
             al = new ArrayList<>();
             al.add("Swipe right to learn more word \n Swipe left to close");
-            al.add("ADD FUN WORDS");
-            al.add("ADD FUN WORDS");
-            al.add("ADD FUN WORDS");
-            al.add("ADD FUN WORDS");
+            al.add("NONPLUSSED\n" + "\n" + "filled with bewilderment");
+            al.add("INCHOATE\n" + "\n" + "only partly in existence; imperfectly formed");
+            al.add("GIBBOUS\n" + "\n" + "marked by convexity or swelling");
+            al.add("FECKLESS\n" + "\n" + "weak, ineffective");
             al.add("ADD FUN WORDS");
             al.add("ADD FUN WORDS");
             al.add("ADD FUN WORDS");
@@ -54,14 +54,13 @@ public class articleView extends AppCompatActivity {
                     arrayAdapter.notifyDataSetChanged();
                 }
 
+                @SuppressLint("SetTextI18n")
                 @Override
                 public void onLeftCardExit(Object dataObject) {
-                    //Do something on the left!
-                    //You also have access to the original object.
-                    //If you want to use it just cast it (String) dataObject
-                    Intent intent = new Intent(articleView.this, MainActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(intent);
+
+                    TextView wordCount = findViewById(R.id.countWords);
+                    wordCount.setText("Streaks:".concat(String.valueOf(i)));
+                    i++;
                 }
 
                 @SuppressLint("SetTextI18n")
