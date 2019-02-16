@@ -7,19 +7,30 @@
     android:orientation="vertical"
     android:background="@color/hansaYellow"
     tools:context=".articleView">
-
+<LinearLayout
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@android:color/white"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:contentDescription="@string/TODO" />
     <TextView
-        android:layout_marginStart="10dp"
-        android:textAllCaps="true"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center|top"
-        android:textColor="@android:color/white"
+        android:id="@+id/countWords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/countWords"/>
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>
 
     <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:layout_margin="20dp"
         android:id="@+id/articles"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"

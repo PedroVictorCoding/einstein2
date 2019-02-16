@@ -7,14 +7,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class articleView extends AppCompatActivity {
     private ArrayList<String> al;
@@ -22,21 +26,65 @@ public class articleView extends AppCompatActivity {
     private int i;
 
     TextView wordCount;
+    ImageButton close;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_view);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-            al = new ArrayList<>();
-            al.add("Swipe right to learn more word \n Swipe left to close");
+        close = findViewById(R.id.close);
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Moves from the current activity to the MainActivity
+                Intent terminate = new Intent(articleView.this, MainActivity.class);
+                terminate.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(terminate);
+                finish();
+            }
+        });
+
+        al = new ArrayList<>();
             al.add("NONPLUSSED\n" + "\n" + "filled with bewilderment");
             al.add("INCHOATE\n" + "\n" + "only partly in existence; imperfectly formed");
             al.add("GIBBOUS\n" + "\n" + "marked by convexity or swelling");
             al.add("FECKLESS\n" + "\n" + "weak, ineffective");
+            al.add("SETOUT\n" + "\n" + "array, display");
+            al.add("FASCISM\n" + "\n" + "a political philosophy that exalts nation and stands for a centralized autocratic government headed by a dictatorial leader");
             al.add("ADD FUN WORDS");
-            al.add("ADD FUN WORDS");
-            al.add("ADD FUN WORDS");
+            al.add("COVENANT\n" + "\n" + "a usually formal, solemn, and binding agreement");
+            al.add("INTELLECTION\n" + "\n" + " exercise of the intellect, reasoning");
+            al.add("CADUCITY\n" + "\n" + "the quality of being transitory or perishable");
+            al.add("EMPATHY\n" + "\n" + "the action of comprehending, being sensitive to");
+            al.add("ETHIC\n" + "\n" + "understanding of what is wrong or right");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+            al.add("\n" + "\n" + "");
+
+
+
+
+        Collections.shuffle(al);
 
 
 
