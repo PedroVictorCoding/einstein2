@@ -16,10 +16,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.night.einstein.courses.PhilosophyIntroActivity;
+import com.night.einstein.courses.PhysicsIntroActivity;
 
 public class EinsteinsOwl extends AppCompatActivity {
 
-    Button philosophyIntro;
+    Button philosophyIntro, physicsIntro;
     ImageButton close;
 
     @Override
@@ -35,6 +36,15 @@ public class EinsteinsOwl extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(EinsteinsOwl.this, PhilosophyIntroActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+        physicsIntro = findViewById(R.id.physicsIntro);
+        physicsIntro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EinsteinsOwl.this, PhysicsIntroActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }

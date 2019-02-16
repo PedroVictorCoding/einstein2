@@ -54,12 +54,12 @@ public class articleView extends AppCompatActivity {
             al.add("FECKLESS\n" + "\n" + "weak, ineffective");
             al.add("SETOUT\n" + "\n" + "array, display");
             al.add("FASCISM\n" + "\n" + "a political philosophy that exalts nation and stands for a centralized autocratic government headed by a dictatorial leader");
-            al.add("ADD FUN WORDS");
             al.add("COVENANT\n" + "\n" + "a usually formal, solemn, and binding agreement");
             al.add("INTELLECTION\n" + "\n" + " exercise of the intellect, reasoning");
             al.add("CADUCITY\n" + "\n" + "the quality of being transitory or perishable");
             al.add("EMPATHY\n" + "\n" + "the action of comprehending, being sensitive to");
             al.add("ETHIC\n" + "\n" + "understanding of what is wrong or right");
+            al.add("METAPHOR\n" + "\n" + "a figure of speech in which a phrase literally denoting one kind of idea is used in place of another to suggest an analogy between them ");
             al.add("\n" + "\n" + "");
             al.add("\n" + "\n" + "");
             al.add("\n" + "\n" + "");
@@ -79,8 +79,6 @@ public class articleView extends AppCompatActivity {
             al.add("\n" + "\n" + "");
             al.add("\n" + "\n" + "");
             al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-
 
 
 

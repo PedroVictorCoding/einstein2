@@ -37,7 +37,12 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".articleView"></activity>
+        <activity android:name=".articleView"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".courses.PhysicsIntroActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

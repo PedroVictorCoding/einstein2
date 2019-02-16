@@ -51,4 +51,16 @@
     <string name="start">Start</string>
     <string name="vocabulary">Vocabulary</string>
     <string name="introduction_to_philosophy">Introduction to Philosophy</string>
+    <string name="physics_intro_about">Have you ever thought about why things act the way they do or why they move the way they do? Physics means \'knowledge of nature\' and studies matter, its motion, the behavior through space and time and studies the subsequent energies and forces. If you are interested in learning more about your surrounding this course is perfect for you.</string>
+    <string name="principles_of_conservation">Principles of Conservation</string>
+    <string name="gravitation_and_the_solar_system">Gravitation and the Solar System</string>
+    <string name="the_special_theory_of_relativity">The Special Theory of Relativity</string>
+    <string name="thermodynamics">Thermodynamics</string>
+    <string name="sound_and_light">Sound and Light</string>
+    <string name="optical_systems">Optical Systems</string>
+    <string name="the_electronic_revolution">The Electronic Revolution</string>
+    <string name="the_atom_and_radioactivity">The Atom and Radioactivity</string>
+    <string name="nuclear_radiation">Nuclear Radiation</string>
+    <string name="level_difficult">Level Difficult</string>
+    <string name="introduction_to_physics">Introduction to Physics</string>
 </resources>
