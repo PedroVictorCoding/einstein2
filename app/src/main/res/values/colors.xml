@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5F7ADD</color>
+    <color name="colorPrimaryDark">#5269bf</color>
+    <color name="colorAccent">#5F7ADD</color>
+
+    <!-- Main Pallet in https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51 -->
+    <color name="SeriousBlue">#264653</color>
+    <color name="FunnyBlue">#2a9d8f</color>
+    <color name="hansaYellow">#e9c46a</color>
+    <color name="lightRedOchre">#e76f51</color>
+
+
+
+    <!-- Extra colours -->
+    <color name="darkBackground">#000</color>
+    <color name="darkGrey">#000110</color>
+    <color name="blue">#5F7ADD</color>
+    <color name="dGrey">#eaeaea</color>
+    <color name="dOrange">#D87707</color>
+    <color name="dPurple">#9A00D3</color>
+    <color name="coffee">#6f4e37</color>
+    <color name="pythonBlue">#3776AB</color>
+    <color name="dimGrey">#696969</color>
+    <color name="lightPurple">#D19FFC</color>
+</resources>

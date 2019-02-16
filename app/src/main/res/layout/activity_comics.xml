@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comics"
+    android:orientation="vertical">
+  <WebView
+      android:id="@+id/webView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="0dp"
+      android:layout_marginTop="0dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <Button
+        android:id="@+id/zoomIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:alpha="0"/>
+
+    <Button
+        android:id="@+id/zoomOut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:alpha="0"/>
+
+  </LinearLayout>
+
+
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:gravity="bottom"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/refreshRandom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:text="@string/random"
+        android:textColor="@android:color/white"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:layout_weight="5"
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="@string/close"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        tools:ignore="ButtonStyle"
+        tools:targetApi="o" />
+  </LinearLayout>
+
+    <!-- <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/TODO" /> -->
+</RelativeLayout>

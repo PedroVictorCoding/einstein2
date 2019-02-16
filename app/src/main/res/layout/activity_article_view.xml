@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hansaYellow"
+    tools:context=".articleView">
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center|top"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countWords"/>
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/articles"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rotation_degrees="16"
+        app:max_visible="2"
+        app:min_adapter_stack="0" />
+
+
+</LinearLayout>

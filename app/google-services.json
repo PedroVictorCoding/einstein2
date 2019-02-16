@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "243406696109",
+    "firebase_url": "https://einstein-4185b.firebaseio.com",
+    "project_id": "einstein-4185b",
+    "storage_bucket": "einstein-4185b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243406696109:android:7cea0e072a62162e",
+        "android_client_info": {
+          "package_name": "com.night.einstein"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243406696109-te139o2ags8bcl0kd2rnpjjb40d3o9vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.night.einstein",
+            "certificate_hash": "29ee7e5dfa58fab96350a10f05944fefe50cc724"
+          }
+        },
+        {
+          "client_id": "243406696109-lpukeopp0tuh9i5fcao163hjlhb98udj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOewkEIBNgDfoV-g_rA2CMj_uB6brwFpg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243406696109-4ns8o8ino9t6rihp8kichv9b38thrn2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
