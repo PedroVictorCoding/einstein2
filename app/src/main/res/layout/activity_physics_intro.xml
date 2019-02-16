@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/courseImg"
-        android:src="@drawable/physicsintrocourse"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:contentDescription="@string/TODO"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/TODO" />
+        android:src="@drawable/physicsintrocourse" />
 
 
     <android.support.v4.widget.NestedScrollView
@@ -297,22 +297,28 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="18dp"
             android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/ic_arrow_back_black_24dp"
             android:backgroundTint="@android:color/white"
             tools:ignore="ButtonStyle" />
 
-
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/course_info_box"/>
 
         <Button
             android:id="@+id/startLearning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="12dp"
             android:layout_marginBottom="5dp"
             android:background="@null"
             android:text="@string/start"
@@ -321,6 +327,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             tools:ignore="ButtonStyle" />
+
 
 
     </LinearLayout>

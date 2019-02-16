@@ -60,7 +60,7 @@ public class articleView extends AppCompatActivity {
             al.add("EMPATHY\n" + "\n" + "the action of comprehending, being sensitive to");
             al.add("ETHIC\n" + "\n" + "understanding of what is wrong or right");
             al.add("METAPHOR\n" + "\n" + "a figure of speech in which a phrase literally denoting one kind of idea is used in place of another to suggest an analogy between them ");
-            al.add("\n" + "\n" + "");
+            al.add("GRISTLY\n" + "\n" + "difficult to chew");
             al.add("\n" + "\n" + "");
             al.add("\n" + "\n" + "");
             al.add("\n" + "\n" + "");
