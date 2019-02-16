@@ -15,6 +15,7 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/TODO" />
 
+
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,18 +32,20 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-            <Button
-                android:layout_marginTop="0dp"
-                android:textSize="20sp"
-                android:textAllCaps="true"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:id="@+id/startLearning"
-                android:background="@drawable/startbutton"
-                android:layout_gravity="center|top"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="@string/start" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:textColor="@color/darkBackground"
+            android:textAlignment="center"
+            android:text="@string/introduction_to_philosophy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_marginTop="10dp"
@@ -236,21 +239,45 @@
     </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:background="@drawable/course_info_box"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
         tools:ignore="UselessParent">
+
         <Button
-            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
             android:id="@+id/goBack"
             android:layout_width="30dp"
-            android:backgroundTint="@color/dGrey"
-            android:shadowColor="@android:color/black"
             android:layout_height="30dp"
-            android:background="@drawable/ic_arrow_back_black_24dp" />
+            android:layout_gravity="center"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:backgroundTint="@color/darkBackground"
+            android:shadowColor="@android:color/black"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/startLearning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/startbutton"
+            android:text="@string/start"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
 
     </LinearLayout>
 
