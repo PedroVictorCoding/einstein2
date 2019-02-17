@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".courses.Philosophy.PhilosophyIntroContent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:backgroundTint="@android:color/white"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/philosophy_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="always"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:background="@drawable/course_info_box"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:background="@drawable/course_info_box"
+                android:backgroundTint="@color/dGrey"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true">
+
+                <com.github.zagum.switchicon.SwitchIconView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    app:si_animation_duration="500"
+                    app:si_disabled_alpha="1"
+                    app:si_disabled_color="#fff"
+                    app:si_tint_color="#0CBA00"
+                    app:si_enabled="false"
+                    app:si_no_dash="true"
+                    app:srcCompat="@drawable/ic_radio_button_checked_black_24dp"/>
+                
+                <TextView
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="Logic and Reasoning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
