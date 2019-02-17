@@ -18,6 +18,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         android:background="@drawable/ic_arrow_back_black_24dp"
         android:contentDescription="@string/TODO" />
 
@@ -37,7 +39,7 @@
 </LinearLayout>
 
     <com.lorentzos.flingswipe.SwipeFlingAdapterView
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/articles"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dGrey"
-    tools:context=".courses.PhilosophyIntroActivity">
+    tools:context=".courses.Philosophy.PhilosophyIntroActivity">
 
 
     <ImageView
@@ -12,8 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:contentDescription="@string/TODO"
-        android:scaleType="centerCrop"
-        android:src="@drawable/physicsintrocourse" />
+        android:scaleType="centerCrop" />
 
 
     <android.support.v4.widget.NestedScrollView

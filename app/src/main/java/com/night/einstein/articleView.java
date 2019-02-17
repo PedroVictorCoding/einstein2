@@ -28,12 +28,17 @@ public class articleView extends AppCompatActivity {
     TextView wordCount;
     ImageButton close;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_view);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        TextView wordCount = findViewById(R.id.countWords);
+        wordCount.setText("Streaks: ".concat(String.valueOf(i)));
+        i++;
 
         close = findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() {
@@ -105,7 +110,7 @@ public class articleView extends AppCompatActivity {
                 public void onLeftCardExit(Object dataObject) {
 
                     TextView wordCount = findViewById(R.id.countWords);
-                    wordCount.setText("Streaks:".concat(String.valueOf(i)));
+                    wordCount.setText("Streaks: ".concat(String.valueOf(i)));
                     i++;
                 }
 
@@ -113,7 +118,7 @@ public class articleView extends AppCompatActivity {
                 @Override
                 public void onRightCardExit(Object dataObject) {
                     TextView wordCount = findViewById(R.id.countWords);
-                    wordCount.setText("Streaks:".concat(String.valueOf(i)));
+                    wordCount.setText("Streaks: ".concat(String.valueOf(i)));
                     i++;
                 }
 
