@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".courses.Philosophy.PhilosopyIntroLogic"></activity>
         <activity android:name=".courses.ArticleActivity" />
         <activity
             android:name=".SplashScreen"
@@ -47,9 +48,13 @@
         <activity
             android:name=".ArticleActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.Philosophy.PhilosophyIntroContent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.Philosophy.contents.PhilosophyIntroLogic"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".courses.Philosophy.PhilosophyIntroContent"
-            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

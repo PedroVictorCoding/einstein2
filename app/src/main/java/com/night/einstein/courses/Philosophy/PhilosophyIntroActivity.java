@@ -44,7 +44,6 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(PhilosophyIntroActivity.this, PhilosophyIntroContent.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                overridePendingTransition(0, 0);
                 startActivity(intent);
             }
         });
