@@ -32,7 +32,7 @@
     <string name="history_intro">History Intro</string>
     <string name="politics_intro">Politics Intro</string>
     <string name="geography_intro">Geography Intro</string>
-    <string name="articles">Articles</string>
+    <string name="Articles">Articles</string>
     <string name="about">About</string>
     <string name="philosophyIntroAbout">Have you ever had questions that you cannot find an answer? Philosophy is continuously trying to find solutions to issues like that. If you want to have a better critical thinking philosophy is the way to go. This course is going to give a quick course on philosopher and types of philosophy.</string>
     <string name="physicsIntroAbout">Have you ever thought about why things act the way they do or why they move the way they do? Physics means "knowledge of nature" and studies matter, its motion, the behavior through space and time and studies the subsequent energies and forces.</string>
@@ -63,4 +63,5 @@
     <string name="nuclear_radiation">Nuclear Radiation</string>
     <string name="level_difficult">Level Difficult</string>
     <string name="introduction_to_physics">Introduction to Physics</string>
+    <string name="articles">Articles</string>
 </resources>

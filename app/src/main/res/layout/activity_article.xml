@@ -1,9 +1,354 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".courses.ArticleActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/SeriousBlue"
+    tools:context=".ArticleActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:backgroundTint="@android:color/white"
+            tools:ignore="ButtonStyle" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/course_info_box"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:text="@string/Articles"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:ignore="AdapterViewChildren">
+
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/course_info_box"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:text="What is Philosophy?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:id="@+id/text1"
+                app:colorClickableText="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.robertlevonyan.views.chip.Chip
+                android:id="@+id/chipPhilo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                app:mcv_backgroundColor="@color/dPurple"
+                app:mcv_textColor="@android:color/white"
+                app:mcv_chipText="@string/philosophy" />
+
+
+        </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/course_info_box"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:text="What is Philosophy?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/text1"
+            app:colorClickableText="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chipPhilo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            app:mcv_backgroundColor="@color/dPurple"
+            app:mcv_textColor="@android:color/white"
+            app:mcv_chipText="@string/philosophy" />
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/course_info_box"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:text="What is Philosophy?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/text1"
+            app:colorClickableText="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chipPhilo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            app:mcv_backgroundColor="@color/dPurple"
+            app:mcv_textColor="@android:color/white"
+            app:mcv_chipText="@string/philosophy" />
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/course_info_box"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:text="What is Philosophy?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/text1"
+            app:colorClickableText="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chipPhilo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            app:mcv_backgroundColor="@color/dPurple"
+            app:mcv_textColor="@android:color/white"
+            app:mcv_chipText="@string/philosophy" />
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/course_info_box"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:text="What is Philosophy?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/text1"
+            app:colorClickableText="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chipPhilo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            app:mcv_backgroundColor="@color/dPurple"
+            app:mcv_textColor="@android:color/white"
+            app:mcv_chipText="@string/philosophy" />
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/course_info_box"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:text="What is Philosophy?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/text1"
+            app:colorClickableText="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chipPhilo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            app:mcv_backgroundColor="@color/dPurple"
+            app:mcv_textColor="@android:color/white"
+            app:mcv_chipText="@string/philosophy" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+</LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

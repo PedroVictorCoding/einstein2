@@ -44,17 +44,38 @@
 
             <Button
             android:layout_gravity="center"
-            android:id="@+id/btn1"
+            android:id="@+id/btn3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
-            android:background="@color/lightRedOchre"
+            android:background="@color/SeriousBlue"
             android:contentDescription="@string/TODO"
-            android:text="@string/knowledge_vids"
+            android:text="@string/Articles"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             tools:ignore="NestedWeights" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:background="@color/lightRedOchre"
+                android:contentDescription="@string/TODO"
+                android:text="@string/knowledge_vids"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="NestedWeights" />
         </LinearLayout>
 
         <!--     <LinearLayout

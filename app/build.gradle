@@ -37,4 +37,10 @@ dependencies {
     //animation Player: Glider
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //Better TextView: ReadMoreTextView
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+
+    //small buttons: Material Chip View
+    implementation 'com.robertlevonyan.view:MaterialChipView:1.2.5'
 }
