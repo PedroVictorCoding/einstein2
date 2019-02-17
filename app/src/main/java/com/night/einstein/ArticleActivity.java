@@ -29,7 +29,7 @@ public class ArticleActivity extends AppCompatActivity {
 
 
         TextView text1 = findViewById(R.id.text1);
-        text1.setText(getString(R.string.philosophyIntroAbout) + "  ");
+        text1.setText(getString(R.string.what_is_philosophy_article) + "  ");
 
         close = findViewById(R.id.goBack);
         close.setOnClickListener(new View.OnClickListener() {
