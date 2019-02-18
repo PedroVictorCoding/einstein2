@@ -44,5 +44,6 @@ dependencies {
     //small buttons: Material Chip View
     implementation 'com.robertlevonyan.view:MaterialChipView:1.2.5'
 
-
+    //TextAnimation: TextSurface
+    implementation 'com.github.elevenetc:textsurface:0.9.1'
 }
