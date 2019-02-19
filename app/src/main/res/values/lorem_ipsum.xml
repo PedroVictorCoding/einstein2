@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet. </string>
+    <string name="lorem_ipsum_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at erat tempor, accumsan urna et, volutpat lacus. Sed at tincidunt mi, sit amet scelerisque elit. Cras molestie, felis et pharetra imperdiet, nibh nibh commodo ligula, et malesuada elit tortor eu eros. Nam quis feugiat ante. Vestibulum rhoncus laoreet commodo. Duis suscipit dignissim tortor, et vestibulum arcu condimentum sit amet. Pellentesque euismod tempus risus eu dignissim. Pellentesque in purus mollis, ullamcorper enim scelerisque, ornare metus. Maecenas porttitor lorem elit, quis placerat nunc mattis nec. Pellentesque eleifend quam elit, in sollicitudin orci facilisis sit amet.</string>
+    <string name="lorem_ipsum_paragraphX2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis vel ante eget sagittis. Ut molestie lacus sed fermentum fermentum. Nullam sollicitudin, turpis vel mollis luctus, dui eros gravida lorem, sit amet tincidunt ligula sem vel metus. Aenean sit amet tellus pretium, dapibus sem quis, aliquam dolor. Duis ut molestie mauris. Donec scelerisque eu dolor quis sollicitudin. Nam dignissim quam quis metus sollicitudin, quis volutpat purus consequat. Etiam ullamcorper ex et dui facilisis lacinia. In imperdiet dui diam, eu rutrum urna pulvinar vel. Nam eget lectus vitae ipsum placerat sollicitudin non nec lacus.
+        Nam pharetra tristique ullamcorper. Integer luctus fermentum ornare. Donec id vehicula dolor. Cras in nunc velit. Nam porttitor pharetra enim, a sagittis ex aliquet in. Aliquam cursus diam sagittis, pretium nisi ut, gravida urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi varius vulputate nisi vel accumsan. Quisque massa nunc, commodo et diam id, mattis auctor eros. Etiam faucibus augue ac quam porttitor, sed placerat urna fringilla. Quisque eros dui, vehicula vitae rutrum feugiat, rutrum non augue. </string>
+
+
+</resources>
