@@ -45,7 +45,6 @@ public class EinsteinsOwl extends AppCompatActivity {
         Glide.with(this).load(R.drawable.elonphysics).into(physics);
 
         ImageView chemistry = findViewById(R.id.chemistryIntro);
-        Glide.with(EinsteinsOwl.this).load(R.drawable.chemistrytube).load(chemistry);
 
         ImageView philosophy = findViewById(R.id.philosophyIntro);
         Glide.with(this).load(R.drawable.knt).into(philosophy);
