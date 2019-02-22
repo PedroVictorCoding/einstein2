@@ -66,21 +66,79 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
-                <Button android:id="@+id/physicsIntro"
-                    android:text="@string/physics_intro"
-                    android:layout_marginStart="20sp"
+                <FrameLayout
+                    android:onClick="openPhysics"
+                    android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
-                    style="@style/AppTheme.RoundedCornerMaterialButton"/>
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    tools:ignore="UselessParent">
 
-                <Button android:id="@+id/chemistryIntro"
-                    android:text="@string/chemistry_intro"
+
+                    <ImageView
+                        android:id="@+id/physicsIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/course_info_box"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText"
+                        android:text="@string/physics_intro"/>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:onClick="openChemistry"
                     android:layout_marginEnd="10dp"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
-                    android:backgroundTint="@android:color/holo_green_dark"
-                    style="@style/AppTheme.RoundedCornerMaterialButton"/>
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:backgroundTint="@color/green"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+
+                    <ImageView
+                        android:id="@+id/chemistryIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/chemistrytube"
+                        android:scaleType="fitCenter"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/course_info_box"
+                        android:textAllCaps="true"
+                        android:text="@string/chemistry_intro"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                </FrameLayout>
+
+
 
                 <Button android:id="@+id/biologyIntro"
                     android:text="@string/biology_intro"
@@ -180,16 +238,46 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-                <Button android:id="@+id/philosophyIntro"
-                    android:text="@string/philosophy_introduction"
-                    android:layout_marginStart="20sp"
+                <FrameLayout
+                    android:onClick="openPhilosophy"
+                    android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
                     android:backgroundTint="@color/dPurple"
-                    style="@style/AppTheme.RoundedCornerMaterialButton"/>
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+
+                <ImageView
+                    android:id="@+id/philosophyIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/course_info_box"
+                    android:backgroundTint="@color/dPurple"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/philosophy_introduction"
+                    android:background="@drawable/course_info_box"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+                </FrameLayout>
+
+
 
                 <Button android:id="@+id/ethicsIntro"
                     android:text="@string/ethics_introduction"

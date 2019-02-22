@@ -15,6 +15,7 @@
 
     <!-- Extra colours -->
     <color name="darkBackground">#000</color>
+    <color name="green">#006400</color>
     <color name="darkGrey">#000110</color>
     <color name="blue">#5F7ADD</color>
     <color name="dGrey">#eaeaea</color>
