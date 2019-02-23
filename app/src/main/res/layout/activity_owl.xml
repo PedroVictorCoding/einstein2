@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="AdapterViewChildren,UnusedAttribute">
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbarAlwaysDrawVerticalTrack="true"
     android:scrollbars="none"
+    android:layout_marginBottom="75dp"
     android:scrollbarThumbVertical="@drawable/ic_search_black_24dp"
     tools:ignore="AdapterViewChildren,UnusedAttribute">
 
@@ -20,12 +26,12 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <ImageButton android:id="@+id/close"
-        android:layout_marginStart="10dp"
+  <!--  <ImageButton android:id="@+id/close"
+        android:layout_marginStart="20dp"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/ic_arrow_back_black_24dp"
-        android:contentDescription="@string/TODO" />
+        android:contentDescription="@string/TODO" /> -->
     <TextView android:id="@+id/title"
         android:layout_weight="19"
         android:paddingStart="20dp"
@@ -116,8 +122,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/tubetextchemistry"
                         android:scaleType="fitCenter"
                         tools:ignore="ContentDescription" />
 
@@ -423,3 +427,80 @@
 
 </LinearLayout>
 </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:contentDescription="@string/TODO"
+            android:src="@mipmap/ic_launcher"
+            android:text="@string/einsteinOwl"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:background="@color/SeriousBlue"
+                android:contentDescription="@string/TODO"
+                android:src="@drawable/ic_import_contacts_black_24dp"
+                android:text="@string/Articles"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/lightRedOchre"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:text="@string/knowledge_vids"
+
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/hansaYellow"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/ic_subject_black_24dp"
+            android:text="@string/vocabulary"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</FrameLayout>

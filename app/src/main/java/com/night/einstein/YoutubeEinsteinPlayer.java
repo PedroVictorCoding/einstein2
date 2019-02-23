@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -42,7 +43,7 @@ public class YoutubeEinsteinPlayer extends YouTubeBaseActivity {
         }
     };
 
-
+    ImageButton btnOwl, buttonArticle, buttonWords;
     Button btnClose;
 
     @SuppressLint("ClickableViewAccessibility")
@@ -56,10 +57,43 @@ public class YoutubeEinsteinPlayer extends YouTubeBaseActivity {
         mYoutubePlayerView.initialize(getApiKey(), mOnInitializedListener);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        btnClose.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+      /*  button = findViewById(R.id.btn1);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                  Intent intent = new Intent(YoutubeEinsteinPlayer.this, MainActivity.class);
+                Intent intent = new Intent(YoutubeEinsteinPlayer.this, YoutubeEinsteinPlayer.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        }); */
+        btnOwl = findViewById(R.id.btn4);
+        btnOwl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(YoutubeEinsteinPlayer.this, EinsteinsOwl.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+
+      buttonWords = findViewById(R.id.btn2);
+        buttonWords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(YoutubeEinsteinPlayer.this, articleView.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+        buttonArticle = findViewById(R.id.btn3);
+        buttonArticle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(YoutubeEinsteinPlayer.this, ArticleActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }

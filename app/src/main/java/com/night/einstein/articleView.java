@@ -26,7 +26,7 @@ public class articleView extends AppCompatActivity {
     private int i;
 
     TextView wordCount;
-    ImageButton close;
+    ImageButton close, button, btnOwl, buttonWords, buttonArticle;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -36,11 +36,52 @@ public class articleView extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
+
+        button = findViewById(R.id.btn1);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(articleView.this, YoutubeEinsteinPlayer.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+        btnOwl = findViewById(R.id.btn4);
+        btnOwl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(articleView.this, EinsteinsOwl.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+
+      /*  buttonWords = findViewById(R.id.btn2);
+        buttonWords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(articleView.this, articleView.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        }); */
+       buttonArticle = findViewById(R.id.btn3);
+        buttonArticle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(articleView.this, ArticleActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+
+
         TextView wordCount = findViewById(R.id.countWords);
         wordCount.setText("Streaks: ".concat(String.valueOf(i)));
         i++;
 
-        close = findViewById(R.id.close);
+     /*   close = findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +91,7 @@ public class articleView extends AppCompatActivity {
                 startActivity(terminate);
                 finish();
             }
-        });
+        }); */
 
         al = new ArrayList<>();
             al.add("NONPLUSSED\n" + "\n" + "filled with bewilderment");

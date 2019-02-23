@@ -17,7 +17,7 @@ import com.night.einstein.courses.Physics.PhysicsIntroActivity;
 public class EinsteinsOwl extends AppCompatActivity {
 
     Button philosophyIntro, physicsIntro;
-    ImageButton close;
+    ImageButton close, button, buttonWords, buttonArticle;
 
     @SuppressLint("CheckResult")
     @Override
@@ -28,7 +28,46 @@ public class EinsteinsOwl extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        close = findViewById(R.id.close);
+        button = findViewById(R.id.btn1);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EinsteinsOwl.this, YoutubeEinsteinPlayer.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+        /* btnOwl = findViewById(R.id.btn4);
+        btnOwl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(articleView.this, EinsteinsOwl.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        }); */
+
+      buttonWords = findViewById(R.id.btn2);
+        buttonWords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EinsteinsOwl.this, articleView.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+        buttonArticle = findViewById(R.id.btn3);
+        buttonArticle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EinsteinsOwl.this, ArticleActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+
+
+      /*  close = findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,13 +77,14 @@ public class EinsteinsOwl extends AppCompatActivity {
                 startActivity(terminate);
                 finish();
             }
-        });
+        }); */
 
 
         ImageView physics = findViewById(R.id.physicsIntro);
         Glide.with(this).load(R.drawable.elonphysics).into(physics);
 
         ImageView chemistry = findViewById(R.id.chemistryIntro);
+        Glide.with(this).load(R.drawable.tubetestchemistry).into(chemistry);
 
         ImageView philosophy = findViewById(R.id.philosophyIntro);
         Glide.with(this).load(R.drawable.knt).into(philosophy);
