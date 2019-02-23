@@ -46,4 +46,6 @@ dependencies {
 
     //TextAnimation: TextSurface
     implementation 'com.github.elevenetc:textsurface:0.9.1'
+
+
 }
