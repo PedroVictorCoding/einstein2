@@ -122,79 +122,78 @@
 
 
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="75dp"
+        android:background="@color/SeriousBlue"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btn4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_launcher"
+            android:contentDescription="@string/TODO"
+            android:src="@mipmap/ic_launcher"
+            android:text="@string/einsteinOwl"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
 
-
-                <ImageButton
-                    android:layout_gravity="bottom"
-                    android:id="@+id/btn4"
-                    android:layout_width="match_parent"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_height="75dp"
-                    android:layout_weight="1"
-                    android:background="@color/blue"
-                    android:contentDescription="@string/TODO"
-                    android:text="@string/einsteinOwl"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle" />
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_gravity="bottom"
-                android:layout_height="75dp">
-                <ImageButton
-                    android:layout_gravity="center"
-                    android:id="@+id/btn3"
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:background="@color/SeriousBlue"
-                    android:src="@drawable/ic_import_contacts_black_24dp"
-                    android:contentDescription="@string/TODO"
-                    android:text="@string/Articles"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle" />
-            </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
 
             <ImageButton
-                android:id="@+id/btn1"
+                android:id="@+id/btn3"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
-                android:background="@color/lightRedOchre"
+                android:layout_gravity="center"
                 android:contentDescription="@string/TODO"
-                android:text="@string/knowledge_vids"
-                android:src="@drawable/ic_play_arrow_black_24dp"
-
+                android:background="@drawable/ic_import_contacts_black_24dp"
+                android:text="@string/Articles"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
+        </FrameLayout>
 
-            <ImageButton
-                android:layout_gravity="bottom"
-                android:id="@+id/btn2"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_subject_black_24dp"
-                android:background="@color/hansaYellow"
-                android:contentDescription="@string/TODO"
-                android:text="@string/vocabulary"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="ButtonStyle" />
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:contentDescription="@string/TODO"
+            android:background="@drawable/ic_play_arrow_black_24dp"
+            android:text="@string/knowledge_vids"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
 
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:contentDescription="@string/TODO"
+            android:background="@drawable/ic_subject_black_24dp"
+            android:text="@string/vocabulary"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
 
 
 </FrameLayout>
