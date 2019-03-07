@@ -76,7 +76,7 @@
                     android:onClick="openPhysics"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_width="180dp"
+                    android:layout_width="270dp"
                     android:layout_height="180dp"
                     style="@style/AppTheme.RoundedCornerMaterialButton"
                     tools:ignore="UselessParent">

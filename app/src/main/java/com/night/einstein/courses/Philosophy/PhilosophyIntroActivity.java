@@ -30,10 +30,12 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PhilosophyIntroActivity.this, EinsteinsOwl.class);
+              //Test backBackButton to button
+                onBackPressed();
+              /*  Intent intent = new Intent(PhilosophyIntroActivity.this, EinsteinsOwl.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 overridePendingTransition(0, 0);
-                startActivity(intent);
+                startActivity(intent); */
             }
         });
 
