@@ -70,8 +70,8 @@
     </FrameLayout>
 
 
-    <com.serhatsurguvec.swipablelayout.SwipeableLayout
-        android:id="@+id/swipableLayout"
+    <LinearLayout
+        android:onClick="close"
         android:layout_width="50dp"
         android:layout_gravity="end"
         android:background="@drawable/course_info_box"
@@ -80,12 +80,12 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp">
 
-        <ImageView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/down_arrow"
             android:backgroundTint="@color/colorChipBackground"/>
 
-    </com.serhatsurguvec.swipablelayout.SwipeableLayout>
+    </LinearLayout>
 
 </FrameLayout>

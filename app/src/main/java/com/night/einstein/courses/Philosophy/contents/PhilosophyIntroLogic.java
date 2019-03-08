@@ -25,14 +25,6 @@ public class PhilosophyIntroLogic extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-    SwipeableLayout swipeableLayout = (SwipeableLayout) findViewById(R.id.swipableLayout);
-        swipeableLayout.setOnLayoutCloseListener(new SwipeableLayout.OnLayoutCloseListener() {
-            @Override
-            public void OnLayoutClosed() {
-                finish();
-            }
-        });
-
     }
 
     public void close(View view) {
