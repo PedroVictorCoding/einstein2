@@ -47,5 +47,10 @@ dependencies {
     //TextAnimation: TextSurface
     implementation 'com.github.elevenetc:textsurface:0.9.1'
 
+    //SwipeDown Close Activity
+   // implementation 'com.klinkerapps:sliding-activity:1.5.2'
+
+    //Swipe do Dismiss : SwipableLayout
+     implementation 'com.serhatsurguvec.libraries:swipablelayout:0.0.1'
 
 }

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:background="@android:color/white">
+
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/lorem_ipsum_paragraphX2"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
+
+
+
+
+  </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <!--     <Button android:id="@+id/goBack"
+                 android:layout_width="35dp"
+                 android:layout_height="35dp"
+                 android:layout_gravity="center"
+                 android:layout_marginStart="10dp"
+                 android:onClick="close"
+                 android:background="@drawable/ic_arrow_back_black_24dp"
+                 android:backgroundTint="@android:color/white"/> -->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:text="@string/logic"/>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:onClick="close"
+        android:layout_width="50dp"
+        android:layout_gravity="end"
+        android:background="@drawable/course_info_box"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/down_arrow"
+            android:backgroundTint="@color/colorChipBackground"/>
+
+    </LinearLayout>
+
+</FrameLayout>
