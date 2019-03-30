@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".courses.Physics.PhysicsIntroContent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="always"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:background="@drawable/course_info_box"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:background="@drawable/course_info_box"
+                android:backgroundTint="@color/dGrey"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true">
+
+
+                <Button
+                    android:id="@+id/firstCivilizationsButton"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="First Civilizations"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/timeFirstCivilizations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 mins"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:background="@drawable/course_info_box"
+                android:backgroundTint="@color/dGrey"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true">
+
+
+                <Button
+                    android:id="@+id/ageOfExplorationButton"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Age of Exploration"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/timeAgeOfExploration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 mins"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:background="@drawable/course_info_box"
+                android:backgroundTint="@color/dGrey"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true">
+
+
+                <Button
+                    android:id="@+id/industrialismButton"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Industrialism"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/timeIndustrialism"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 mins"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:background="@drawable/course_info_box"
+                android:backgroundTint="@color/dGrey"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true">
+
+
+                <Button
+                    android:id="@+id/worldWarsButton"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="World Wars"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/timeWorldWars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 mins"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/close"
+            android:backgroundTint="@android:color/white"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="History Intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</FrameLayout>

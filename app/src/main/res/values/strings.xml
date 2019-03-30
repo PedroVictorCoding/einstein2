@@ -42,25 +42,12 @@
     <string name="duration">Duration</string>
     <string name="not_identified">N/D</string>
     <string name="ContentsTitle">Contents</string>
-    <string name="philosophyIntroSyllabusContent">Logic - Reasoning and how thoughts should be expressed; recognize fallacies.</string>
-    <string name="philosophyIntroSyllabusEthics">Ethics - Express reasons in support of moral claims; understand that there are better and worse reasons for making a moral decision. </string>
-    <string name="philosophyIntroSyllabusMetaphysicsPI">Metaphysics: Personal Identity - Personal interpretation and recognition of our criteria and the capability of considering that our common sense beliefs of ourselves may be mistaken.</string>
-    <string name="philosophyIntroSyllabusMetaphysicsMBP">Metaphysics: Mind-Body Problem - Understand central problems concerning the conception of mind.</string>
-    <string name="philosophyIntroSyllabusEpistemology">Epistemology - Understand the major philosophical approaches to epistemology and the complexity of how people interact with knowledge. </string>
-    <string name="philosophyIntroSyllabusReligion">Philosophy of Religion - Learn the theistic conception of God and different arguments for the existence of God; Comprehend the dilemma of evil for theistic belief, and understand the complexity of evaluating justified religious belief. </string>
-    <string name="start">Start</string>
+    <string name="philosophyIntroSyllabusContent"><b> Logic</b> - Reasoning and how thoughts should be expressed; recognize fallacies. \n<b> Ethics</b> - Express reasons in support of moral claims; understand that there are better and worse reasons for making a moral decision. \n<b> Metaphysics: Personal Identity</b> - Personal interpretation and recognition of our criteria and the capability of considering that our common sense beliefs of ourselves may be mistaken. \n<b> Metaphysics: Mind-Body Problem</b> - Understand central problems concerning the conception of mind. \n<b> Epistemology</b> - Understand the major philosophical approaches to epistemology and the complexity of how people interact with knowledge. \n<b> Philosophy of Religion</b> - Learn the theistic conception of God and different arguments for the existence of God; Comprehend the dilemma of evil for theistic belief, and understand the complexity of evaluating justified religious belief. </string>
+     <string name="start">Start</string>
     <string name="vocabulary">Vocabulary</string>
     <string name="introduction_to_philosophy">Introduction to Philosophy</string>
     <string name="physics_intro_about">Have you ever thought about why things act the way they do or why they move the way they do? Physics means \'knowledge of nature\' and studies matter, its motion, the behavior through space and time and studies the subsequent energies and forces. If you are interested in learning more about your surrounding this course is perfect for you.</string>
-    <string name="principles_of_conservation">Principles of Conservation</string>
-    <string name="gravitation_and_the_solar_system">Gravitation and the Solar System</string>
-    <string name="the_special_theory_of_relativity">The Special Theory of Relativity</string>
-    <string name="thermodynamics">Thermodynamics</string>
-    <string name="sound_and_light">Sound and Light</string>
-    <string name="optical_systems">Optical Systems</string>
-    <string name="the_electronic_revolution">The Electronic Revolution</string>
-    <string name="the_atom_and_radioactivity">The Atom and Radioactivity</string>
-    <string name="nuclear_radiation">Nuclear Radiation</string>
+    <string name="physicsIntroSyllabusContent"> Principles of Conservation \n Gravitation and the Solar System \n The Special Theory of Relativity \n Thermodynamics \n Sound and Light \n Optical Systems \n The Atom and Radioactivity \n Nuclear Radiation</string>
     <string name="level_difficult">Level Difficult</string>
     <string name="introduction_to_physics">Introduction to Physics</string>
     <string name="articles">Articles</string>
@@ -68,5 +55,9 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="logic">Logic</string>
+    <string name="level_easy">Level Easy</string>
+    <string name="introduction_to_history">Introduction to History</string>
+    <string name="historyIntroAbout">History is a very important subject because it shows how the past was, and without the past we lose how future. \n History shows us how we should act and not to make the same mistakes. \n Here you will learn the very basics of history.</string>
+    <string name="historyIntroSyllabusContent">First Civilizations \n Age of Exploration \n Industrialism \n World Wars</string>
 
 </resources>

@@ -51,7 +51,16 @@
             android:name=".courses.Philosophy.PhilosophyIntroContent"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".courses.Philosophy.contents.PhilosophyIntroLogic"
+            android:name=".courses.Philosophy.contentsPhilosophy.PhilosophyIntroLogic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.Physics.PhysicsIntroContent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.History.HistoryIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.History.HistoryIntroContent"
             android:screenOrientation="portrait" />
     </application>
 

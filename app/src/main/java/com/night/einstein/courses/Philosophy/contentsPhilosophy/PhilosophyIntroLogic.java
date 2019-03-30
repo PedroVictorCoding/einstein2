@@ -1,4 +1,4 @@
-package com.night.einstein.courses.Philosophy.contents;
+package com.night.einstein.courses.Philosophy.contentsPhilosophy;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,6 @@ import android.widget.Button;
 
 import com.night.einstein.R;
 import com.night.einstein.courses.Philosophy.PhilosophyIntroContent;
-import com.serhatsurguvec.swipablelayout.SwipeableLayout;
 
 public class PhilosophyIntroLogic extends AppCompatActivity {
 

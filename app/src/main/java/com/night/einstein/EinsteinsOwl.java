@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.night.einstein.courses.History.HistoryIntroActivity;
 import com.night.einstein.courses.Philosophy.PhilosophyIntroActivity;
 import com.night.einstein.courses.Physics.PhysicsIntroActivity;
 
@@ -102,5 +103,11 @@ public class EinsteinsOwl extends AppCompatActivity {
     }
     public void openChemistry(View view){
         //Add Intent
+    }
+
+    public void openHistory(View view) {
+        Intent intent = new Intent(EinsteinsOwl.this, HistoryIntroActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 }

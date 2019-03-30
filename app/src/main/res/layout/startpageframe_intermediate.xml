@@ -42,7 +42,7 @@
             android:textAllCaps="false"
             android:textColor="@color/darkBackground"
             android:textAlignment="center"
-            android:text="@string/introduction_to_philosophy"
+            android:id="@+id/courseTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -63,7 +63,7 @@
 
 
         <TextView
-            android:text="@string/philosophyIntroAbout"
+            android:id="@+id/aboutContent"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textAllCaps="false"
@@ -73,7 +73,9 @@
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-            <LinearLayout
+
+          <LinearLayout
+                android:id="@+id/difficulty"
                 android:background="@drawable/difficulty_gradient_intermediente"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"
@@ -82,6 +84,7 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="50dp">
+
 
             <TextView
                 android:text="@string/level_intermediate"
@@ -149,6 +152,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/courseDuration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -170,10 +174,10 @@
                     android:textStyle="bold"
                     android:text="@string/ContentsTitle"
                     android:layout_width="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="0dp"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="@string/philosophyIntroSyllabusContent"
+                    android:id="@+id/contentsContent"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
                     android:layout_marginBottom="5dp"
@@ -182,56 +186,6 @@
                     android:layout_marginEnd="12dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-                <TextView
-                    android:text="@string/philosophyIntroSyllabusEthics"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textAllCaps="false"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:text="@string/philosophyIntroSyllabusMetaphysicsPI"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:layout_marginBottom="5dp"
-                    android:textAllCaps="false"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:text="@string/philosophyIntroSyllabusMetaphysicsMBP"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textAllCaps="false"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:text="@string/philosophyIntroSyllabusEpistemology"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textAllCaps="false"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_width="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:layout_height="wrap_content" />
-            <TextView
-                android:text="@string/philosophyIntroSyllabusReligion"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:textAllCaps="false"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
 
 

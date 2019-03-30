@@ -53,4 +53,7 @@ dependencies {
     //Swipe do Dismiss : SwipableLayout
      implementation 'com.serhatsurguvec.libraries:swipablelayout:0.0.1'
 
+    //Gradient: dynamitechetan
+    implementation 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
+
 }
