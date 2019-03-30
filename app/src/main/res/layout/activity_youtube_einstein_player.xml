@@ -25,7 +25,9 @@
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
         android:layout_height="75dp"
+        android:background="@color/SeriousBlue"
         android:orientation="horizontal">
+
 
         <ImageButton
             android:id="@+id/btn4"
@@ -33,7 +35,7 @@
             android:layout_height="75dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="@color/blue"
+            android:background="@mipmap/ic_launcher"
             android:contentDescription="@string/TODO"
             android:src="@mipmap/ic_launcher"
             android:text="@string/einsteinOwl"
@@ -53,9 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:layout_gravity="center"
-                android:background="@color/SeriousBlue"
                 android:contentDescription="@string/TODO"
-                android:src="@drawable/ic_import_contacts_black_24dp"
+                android:background="@drawable/ic_import_contacts_black_24dp"
                 android:text="@string/Articles"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
@@ -69,11 +70,9 @@
             android:layout_height="75dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="@color/lightRedOchre"
             android:contentDescription="@string/TODO"
-            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:background="@drawable/ic_play_arrow_black_24dp"
             android:text="@string/knowledge_vids"
-
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -85,9 +84,8 @@
             android:layout_height="75dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="@color/hansaYellow"
             android:contentDescription="@string/TODO"
-            android:src="@drawable/ic_subject_black_24dp"
+            android:background="@drawable/ic_subject_black_24dp"
             android:text="@string/vocabulary"
             android:textColor="@android:color/white"
             android:textSize="20sp"
