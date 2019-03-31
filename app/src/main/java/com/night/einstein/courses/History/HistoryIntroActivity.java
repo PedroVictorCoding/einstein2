@@ -55,7 +55,7 @@ public class HistoryIntroActivity extends AppCompatActivity {
         //Header Animation
         ImageView animation = findViewById(R.id.courseImg);
         //TODO change animation
-        Glide.with(this).load(R.drawable.philosophersphilosophy).into(animation);
+        Glide.with(this).load(R.drawable.historyheader).into(animation);
 
 
         //Animation of difficulty level
