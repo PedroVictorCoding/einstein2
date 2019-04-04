@@ -59,5 +59,13 @@
     <string name="introduction_to_history">Introduction to History</string>
     <string name="historyIntroAbout">History is a very important subject because it shows how the past was, and without the past we lose how future. \n History shows us how we should act and not to make the same mistakes. \n Here you will learn the very basics of history.</string>
     <string name="historyIntroSyllabusContent">First Civilizations \n Age of Exploration \n Industrialism \n World Wars</string>
+    <string name="FormalLogicAbout">Formal logic is the study of inference with purely formal content.</string>
+    <string name="InformalLogicAbout">Informal logic is the study of natural language arguments.</string>
+    <string name="InformalLogic">Informal Logic</string>
+    <string name="FormalLogic">Formal Logic</string>
+    <string name="SymbolicLogic">Symbolic Logic</string>
+    <string name="MathematicalLogic">Mathematical Logic</string>
+    <string name="SymbolicLogicAbout">Symbolic logic is the study of symbolic abstractions that capture the formal features of logical inference.</string>
+    <string name="MathematicalLogicAbout">Mathematical logic is an extension of symbolic logic into other areas, in particular to the study of model theory, proof theory, set theory, and recursion theory.</string>
 
 </resources>

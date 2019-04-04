@@ -27,9 +27,6 @@
             android:name=".YoutubeEinsteinPlayer"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".comics"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".EinsteinsOwl"
             android:screenOrientation="portrait" />
         <activity

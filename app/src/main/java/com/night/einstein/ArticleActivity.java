@@ -17,8 +17,6 @@ import com.night.einstein.courses.Philosophy.PhilosophyIntroActivity;
 import com.robertlevonyan.views.chip.Chip;
 import com.robertlevonyan.views.chip.OnChipClickListener;
 
-import java.util.Objects;
-
 public class ArticleActivity extends AppCompatActivity {
 
     Button close;
@@ -106,7 +104,7 @@ public class ArticleActivity extends AppCompatActivity {
 
     public void ShowPopupWhatIsPhilosophy(View view) {
         TextView textClose;
-        myDialog.setContentView(R.layout.article_what_is_philosophy);
+        myDialog.setContentView(R.layout.article_view);
         textClose = myDialog.findViewById(R.id.txtclose);
         textClose.setText("x");
         textClose.setOnClickListener(new View.OnClickListener() {

@@ -11,10 +11,11 @@ import android.widget.Button;
 import com.night.einstein.R;
 import com.night.einstein.courses.Philosophy.PhilosophyIntroContent;
 
+import java.util.ArrayList;
+
 public class PhilosophyIntroLogic extends AppCompatActivity {
 
     Button close;
-    ViewPager slideViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
