@@ -23,8 +23,12 @@
           }
         },
         {
-          "client_id": "243406696109-lpukeopp0tuh9i5fcao163hjlhb98udj.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "243406696109-huj8agjbhl1oht8ltr0m76na5jhtvqoo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.night.einstein",
+            "certificate_hash": "16bbf4a94f4d6816d8409bd7aa26be96fbf53d76"
+          }
         }
       ],
       "api_key": [
@@ -33,20 +37,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "243406696109-4ns8o8ino9t6rihp8kichv9b38thrn2n.apps.googleusercontent.com",
+              "client_id": "243406696109-lpukeopp0tuh9i5fcao163hjlhb98udj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

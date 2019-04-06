@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity android:name=".InProgress"></activity>
         <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait">
@@ -23,6 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".YoutubeEinsteinPlayer"
             android:screenOrientation="portrait" />

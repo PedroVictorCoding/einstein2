@@ -110,4 +110,11 @@ public class EinsteinsOwl extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
+    public void info(View view) {
+        Intent intent = new Intent(EinsteinsOwl.this, InfoActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+
+    }
 }

@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.night.einstein.EinsteinsOwl;
+import com.night.einstein.InProgress;
 import com.night.einstein.R;
 
 public class HistoryIntroActivity extends AppCompatActivity {
@@ -43,18 +44,19 @@ public class HistoryIntroActivity extends AppCompatActivity {
 
         //Starts to course
         start = findViewById(R.id.startLearning);
+        start.setText("Coming Soon!");
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  Intent intent = new Intent(HistoryIntroActivity.this, .class);
-             //   intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-              //  startActivity(intent);
+                //TODO Change To HistoryIntroContent when course almost complete
+                Intent intent = new Intent(HistoryIntroActivity.this, InProgress.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         });
 
         //Header Animation
         ImageView animation = findViewById(R.id.courseImg);
-        //TODO change animation
         Glide.with(this).load(R.drawable.historyheader).into(animation);
 
 

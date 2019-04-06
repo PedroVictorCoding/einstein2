@@ -1,5 +1,6 @@
 package com.night.einstein.courses.Physics;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.night.einstein.EinsteinsOwl;
+import com.night.einstein.InProgress;
 import com.night.einstein.R;
 
 
@@ -20,6 +22,7 @@ public class PhysicsIntroActivity extends AppCompatActivity {
 
         Button close, start;
 
+        @SuppressLint("SetTextI18n")
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -39,10 +42,12 @@ public class PhysicsIntroActivity extends AppCompatActivity {
             });
 
             start = findViewById(R.id.startLearning);
+            start.setText("Coming Soon!");
             start.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(PhysicsIntroActivity.this, PhysicsIntroContent.class);
+                    //TODO Change to PhysicsIntroContent when course completed or close to complete
+                    Intent intent = new Intent(PhysicsIntroActivity.this, InProgress.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }

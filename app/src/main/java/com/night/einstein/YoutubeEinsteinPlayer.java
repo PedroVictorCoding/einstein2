@@ -52,7 +52,6 @@ public class YoutubeEinsteinPlayer extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube_einstein_player);
         Log.d(TAG, "onCreate: Starting.");
-        btnClose = findViewById(R.id.btnClose);
         mYoutubePlayerView = findViewById(R.id.youtubePlay);
         mYoutubePlayerView.initialize(getApiKey(), mOnInitializedListener);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
