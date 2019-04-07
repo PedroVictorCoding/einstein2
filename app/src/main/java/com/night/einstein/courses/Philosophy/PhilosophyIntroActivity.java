@@ -3,22 +3,32 @@ package com.night.einstein.courses.Philosophy;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.GlideException;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
 import com.night.einstein.EinsteinsOwl;
 import com.night.einstein.R;
+
 
 public class PhilosophyIntroActivity extends AppCompatActivity {
 
     Button close, start;
+
+
 
     @SuppressLint({"SetTextI18n", "ResourceType"})
     @Override
@@ -41,6 +51,7 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
             }
         });
 
+
         //Starts to course
         start = findViewById(R.id.startLearning);
         start.setOnClickListener(new View.OnClickListener() {
@@ -52,9 +63,25 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
             }
         });
 
+        final ProgressBar progressBar = findViewById(R.id.progressBar);
+
         //Header Animation
         ImageView animation = findViewById(R.id.courseImg);
-        Glide.with(this).load(R.drawable.philosophersphilosophy).into(animation);
+        Glide.with(this).load("https://pedrovictorcoding.github.io/index.html/images/host_android_einstein/philosophersphilosophy.gif")
+                .listener(new RequestListener<Drawable>() {
+                    @Override
+                    public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                        progressBar.setVisibility(View.GONE);
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+                        progressBar.setVisibility(View.GONE);
+                        return false;
+                    }
+                })
+                .into(animation);
 
 
         //Animation of difficulty level
@@ -79,6 +106,7 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
         courseDuration.setText(R.string.not_identified);
 
 
-    }
 
+
+    }
 }

@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.night.einstein.courses.Geometry.GeometryIntroActivity;
 import com.night.einstein.courses.History.HistoryIntroActivity;
 import com.night.einstein.courses.Philosophy.PhilosophyIntroActivity;
 import com.night.einstein.courses.Physics.PhysicsIntroActivity;
@@ -113,6 +114,13 @@ public class EinsteinsOwl extends AppCompatActivity {
 
     public void info(View view) {
         Intent intent = new Intent(EinsteinsOwl.this, InfoActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+
+    }
+
+    public void openGeometry(View view) {
+        Intent intent = new Intent(EinsteinsOwl.this, GeometryIntroActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
 

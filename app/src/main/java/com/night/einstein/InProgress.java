@@ -27,7 +27,7 @@ public class InProgress extends AppCompatActivity {
 
     }
 
-
+/*
     Long physicsVotes = 0L;
     DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     ValueEventListener listener = new ValueEventListener() {
@@ -58,6 +58,6 @@ public class InProgress extends AppCompatActivity {
     public void physicsVote(View view) {
         reference.child("physics").setValue(++physicsVotes);
     }
-
+*/
 
 }

@@ -7,12 +7,21 @@
     tools:context=".courses.Philosophy.PhilosophyIntroActivity">
 
 
+
     <ImageView
         android:id="@+id/courseImg"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
         android:contentDescription="@string/TODO" />
+
+    <ProgressBar android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity=""
+        android:visibility="visible"/>
+
 
 
     <android.support.v4.widget.NestedScrollView
@@ -197,6 +206,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp">
+
 
         <Button
             android:id="@+id/goBack"

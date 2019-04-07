@@ -1,4 +1,4 @@
-package com.night.einstein.courses.History;
+package com.night.einstein.courses.Geometry;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -24,7 +24,7 @@ import com.night.einstein.EinsteinsOwl;
 import com.night.einstein.InProgress;
 import com.night.einstein.R;
 
-public class HistoryIntroActivity extends AppCompatActivity {
+public class GeometryIntroActivity extends AppCompatActivity {
 
     Button close, start;
 
@@ -42,7 +42,7 @@ public class HistoryIntroActivity extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HistoryIntroActivity.this, EinsteinsOwl.class);
+                Intent intent = new Intent(GeometryIntroActivity.this, EinsteinsOwl.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 overridePendingTransition(0, 0);
                 startActivity(intent);
@@ -55,8 +55,8 @@ public class HistoryIntroActivity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO Change To HistoryIntroContent when course almost complete
-                Intent intent = new Intent(HistoryIntroActivity.this, InProgress.class);
+                //TODO Change To GeometryIntroContent when course almost complete
+                Intent intent = new Intent(GeometryIntroActivity.this, InProgress.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
@@ -66,8 +66,7 @@ public class HistoryIntroActivity extends AppCompatActivity {
 
         //Header Animation
         ImageView animation = findViewById(R.id.courseImg);
-        Glide.with(this)
-                .load("https://pedrovictorcoding.github.io/index.html/images/host_android_einstein/historyheader.gif")
+        Glide.with(this).load("https://pedrovictorcoding.github.io/index.html/images/host_android_einstein/geometry.gif")
                 .listener(new RequestListener<Drawable>() {
                     @Override
                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
@@ -82,6 +81,7 @@ public class HistoryIntroActivity extends AppCompatActivity {
                     }
                 })
                 .into(animation);
+       // Glide.with(this).load(R.drawable.geometry).into(animation);
 
 
         //Animation of difficulty level
@@ -94,7 +94,7 @@ public class HistoryIntroActivity extends AppCompatActivity {
 
         //Add Text to Course Title
         final TextView courseTitle = findViewById(R.id.courseTitle);
-        courseTitle.setText(R.string.introduction_to_history);
+        courseTitle.setText(R.string.introduction_to_geometry);
         //Add Text to About Content
         final TextView aboutContent = findViewById(R.id.aboutContent);
         aboutContent.setText(getString(R.string.historyIntroAbout));

@@ -62,6 +62,9 @@
         <activity
             android:name=".courses.History.HistoryIntroContent"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.Geometry.GeometryIntroActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

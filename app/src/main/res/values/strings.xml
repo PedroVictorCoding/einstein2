@@ -72,5 +72,7 @@
     <string name="app_author">Pedro Victor</string>
     <string name="in_progress">In Progress</string>
     <string name="physicsVote">0</string>
+    <string name="introduction_to_geometry">Introduction to Geometry</string>
+
 
 </resources>
