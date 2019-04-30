@@ -7,6 +7,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -20,15 +22,16 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.github.zagum.expandicon.ExpandIconView;
 import com.night.einstein.EinsteinsOwl;
 import com.night.einstein.R;
 
 
-public class PhilosophyIntroActivity extends AppCompatActivity {
+public class PhilosophyIntroActivity extends AppCompatActivity implements GestureDetector.OnGestureListener {
 
     Button close, start;
-
-
+    private ExpandIconView expandIconView2;
+    private GestureDetector gestureDetector;
 
     @SuppressLint({"SetTextI18n", "ResourceType"})
     @Override
@@ -38,6 +41,8 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
+        expandIconView2 = findViewById(R.id.expand_icon2);
 
         //Close to Owl TODO check for previous activity function
         close = findViewById(R.id.goBack);
@@ -50,6 +55,8 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        setUpSlidingContainer();
 
 
         //Starts to course
@@ -106,7 +113,61 @@ public class PhilosophyIntroActivity extends AppCompatActivity {
         courseDuration.setText(R.string.not_identified);
 
 
+    }
+
+    private void setUpSlidingContainer() {
+            gestureDetector = new GestureDetector(this, this);
+            gestureDetector.setIsLongpressEnabled(false);
+
+        View swipeDetectionView = findViewById(R.id.swipe_detector2);
+            swipeDetectionView.setClickable(true);
+            swipeDetectionView.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_UP) {
+                        expandIconView2.setFraction(.5f, true);
+                    }
+                    return gestureDetector.onTouchEvent(event);
+                }
+            });
+
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+        float fraction;
+        if (Math.signum(distanceY) > 0) {
+            fraction = 1f;
+        } else {
+            fraction = 0f;
+        }
+        expandIconView2.setFraction(fraction, true);
+        return false;
+    }
+
+    @Override
+    public boolean onDown(MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent e) {
+        return false;
+    }
 
 
+    @Override
+    public void onLongPress(MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+        return false;
     }
 }

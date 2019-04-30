@@ -52,4 +52,11 @@ public class InfoActivity extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
+    public void openAndroidExpandIcon(View view) {
+        String url = "https://github.com/zagum/Android-ExpandIcon";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
 }

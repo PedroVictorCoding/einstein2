@@ -226,9 +226,45 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/android-expand"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:onClick="openAndroidExpandIcon"
+                android:background="@color/colorChipBackground">
 
+                <TextView
+                    android:text="zagum"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Android-ExpandIcon"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+<android.support.v4.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
 
         </LinearLayout>
 
 
-    </LinearLayout></android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -24,6 +24,7 @@
 
 
     <android.support.v4.widget.NestedScrollView
+        android:id="@+id/swipe_detector2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
@@ -33,12 +34,26 @@
 
         <LinearLayout
             android:background="@drawable/course_info_box"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
             android:layout_marginTop="220dp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+
+            <com.github.zagum.expandicon.ExpandIconView
+                android:id="@+id/expand_icon2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                app:eiv_animationDuration="500"
+                app:eiv_color="#000"
+                app:eiv_colorIntermediate="@color/colorPrimary"
+                app:eiv_colorLess="@color/colorPrimary"
+                app:eiv_colorMore="@color/colorAccent"
+                app:eiv_padding="8dp"
+                app:eiv_roundedCorners="false"
+                app:eiv_switchColor="true"/>
+
 
             <TextView
                 android:textStyle="bold"
