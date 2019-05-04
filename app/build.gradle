@@ -52,9 +52,8 @@ dependencies {
     //Zagum - Android-ExpandIcon
     implementation 'com.github.zagum:Android-ExpandIcon:1.2.1'
 
-    //Ashok-Varma - BottomNavigation
-    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
-
+    //Devlight - navigationTabBar
+    implementation 'com.github.devlight.navigationtabbar:navigationtabbar:1.2.3'
 
 
 }

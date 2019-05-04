@@ -1,22 +1,32 @@
 package com.night.einstein;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.gigamole.navigationtabbar.ntb.NavigationTabBar;
 import com.night.einstein.courses.Geometry.GeometryIntroActivity;
 import com.night.einstein.courses.History.HistoryIntroActivity;
 import com.night.einstein.courses.Philosophy.PhilosophyIntroActivity;
 import com.night.einstein.courses.Physics.PhysicsIntroActivity;
 
-public class EinsteinsOwl extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class EinsteinsOwl extends Activity {
 
     Button philosophyIntro, physicsIntro;
     ImageButton close, button, buttonWords, buttonArticle;
@@ -26,8 +36,8 @@ public class EinsteinsOwl extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_owl);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 
 
         button = findViewById(R.id.btn1);
