@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import com.night.einstein.R;
 
 public class TheoriesOfLogic extends Fragment {
-    public static WhatIsLogic newInstance(){
-        WhatIsLogic fragment = new WhatIsLogic();
+    public static TheoriesOfLogic newInstance(){
+        TheoriesOfLogic fragment = new TheoriesOfLogic();
         return fragment;
     }
 

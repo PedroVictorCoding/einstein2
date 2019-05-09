@@ -135,4 +135,7 @@ public class EinsteinsOwl extends Activity {
         startActivity(intent);
 
     }
+
+    public void openPhysics2(View view) {
+    }
 }

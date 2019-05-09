@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
+import com.night.einstein.home.FragmentController;
 
 
 public class SplashScreen extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class SplashScreen extends AppCompatActivity {
 
             public void run() {
 
-                Intent intent = new Intent(SplashScreen.this, EinsteinsOwl.class);
+                Intent intent = new Intent(SplashScreen.this, FragmentController.class);
                 startActivity(intent);
                 finish();
 

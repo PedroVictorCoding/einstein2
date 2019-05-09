@@ -88,16 +88,6 @@ public class ArticleActivity extends AppCompatActivity {
         }); */
 
 
-       Chip chipPhilo1 = findViewById(R.id.chipPhilo1);
-        chipPhilo1.setOnChipClickListener(new OnChipClickListener() {
-            @Override
-            public void onChipClick(View v) {
-                Intent intent = new Intent(ArticleActivity.this, PhilosophyIntroActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
 
 
     }
@@ -115,6 +105,11 @@ public class ArticleActivity extends AppCompatActivity {
         });
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         myDialog.show();
+    }
+
+    public void chip1(View view) {
+        Intent intent = new Intent(ArticleActivity.this, PhilosophyIntroActivity.class);
+        startActivity(intent);
     }
 }
 

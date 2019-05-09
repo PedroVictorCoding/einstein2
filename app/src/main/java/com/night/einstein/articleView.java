@@ -36,45 +36,6 @@ public class articleView extends AppCompatActivity {
 
 
 
-        button = findViewById(R.id.btn1);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(articleView.this, YoutubeEinsteinPlayer.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
-        btnOwl = findViewById(R.id.btn4);
-        btnOwl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(articleView.this, EinsteinsOwl.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
-
-      /*  buttonWords = findViewById(R.id.btn2);
-        buttonWords.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(articleView.this, articleView.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        }); */
-       buttonArticle = findViewById(R.id.btn3);
-        buttonArticle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(articleView.this, ArticleActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
-
-
         TextView wordCount = findViewById(R.id.countWords);
         wordCount.setText("Streaks: ".concat(String.valueOf(i)));
         i++;

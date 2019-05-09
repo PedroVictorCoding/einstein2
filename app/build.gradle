@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
     compileSdkVersion 28
@@ -53,7 +54,7 @@ dependencies {
     implementation 'com.github.zagum:Android-ExpandIcon:1.2.1'
 
     //Devlight - navigationTabBar
-    implementation 'com.github.devlight.navigationtabbar:navigationtabbar:1.2.3'
+    implementation 'com.github.devlight.navigationtabbar:navigationtabbar:1.2.5'
 
 
 }

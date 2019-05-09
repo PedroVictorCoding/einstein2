@@ -39,6 +39,9 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".home.FragmentController"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".articleView"
             android:screenOrientation="portrait" />
         <activity

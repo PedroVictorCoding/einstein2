@@ -11,9 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:text="Logic"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:gravity="center"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
