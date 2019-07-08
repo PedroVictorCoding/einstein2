@@ -3,28 +3,18 @@ package com.night.einstein;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.gigamole.navigationtabbar.ntb.NavigationTabBar;
 import com.night.einstein.courses.Geometry.GeometryIntroActivity;
 import com.night.einstein.courses.History.HistoryIntroActivity;
 import com.night.einstein.courses.Philosophy.PhilosophyIntroActivity;
 import com.night.einstein.courses.Physics.PhysicsIntroActivity;
-
-import java.util.ArrayList;
 
 public class EinsteinsOwl extends Activity {
 
@@ -35,49 +25,8 @@ public class EinsteinsOwl extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_owl);
+        setContentView(R.layout.activity_owl2);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-
-
-        button = findViewById(R.id.btn1);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EinsteinsOwl.this, YoutubeEinsteinPlayer.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
-        /* btnOwl = findViewById(R.id.btn4);
-        btnOwl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(articleView.this, EinsteinsOwl.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        }); */
-
-      buttonWords = findViewById(R.id.btn2);
-        buttonWords.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EinsteinsOwl.this, articleView.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
-        buttonArticle = findViewById(R.id.btn3);
-        buttonArticle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EinsteinsOwl.this, ArticleActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
-
 
       /*  close = findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +49,23 @@ public class EinsteinsOwl extends Activity {
 
         ImageView philosophy = findViewById(R.id.philosophyIntro);
         Glide.with(this).load(R.drawable.knt).into(philosophy);
+
+        ImageView logosvg = findViewById(R.id.biologyIntro );
+        Glide.with(this).load("").into(logosvg);
+
+     /*   ImageView game_header = findViewById(R.id.science_horizontal_header);
+        Glide.with(this).load("https://pedrovictorcoding.github.io/index.html/images/host_android_einstein/earthphysics_1.gif").into(game_header);
+
+        ImageView philosophy_header = findViewById(R.id.philosophy_horizontal_header);
+        Glide.with(this).load("https://pedrovictorcoding.github.io/index.html/images/host_android_einstein/philosophersphilosophy.gif").into(philosophy_header);
+
+        ImageView geometry_header = findViewById(R.id.mathematics_horizontal_header);
+        Glide.with(this).load("https://pedrovictorcoding.github.io/index.html/images/host_android_einstein/geometry.gif").into(geometry_header);
+
+        ImageView humanities_header = findViewById(R.id.humanities_horizontal_header);
+        Glide.with(this).load("https://pedrovictorcoding.github.io/index.html/images/host_android_einstein/historyheader.gif").into(humanities_header); */
+
+
     }
 
     public void openPhysics(View view) {
@@ -137,5 +103,21 @@ public class EinsteinsOwl extends Activity {
     }
 
     public void openPhysics2(View view) {
+    }
+
+    public void openWords(View view) {
+        Intent intent = new Intent(EinsteinsOwl.this, articleView.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void openArticles(View view) {
+
+    }
+
+    public void openYoutubePlayer(View view) {
+        Intent intent = new Intent(EinsteinsOwl.this, YoutubeEinsteinPlayer.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 }

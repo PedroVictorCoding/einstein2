@@ -67,23 +67,6 @@ public class articleView extends AppCompatActivity {
             al.add("METAPHOR\n" + "\n" + "a figure of speech in which a phrase literally denoting one kind of idea is used in place of another to suggest an analogy between them ");
             al.add("GRISTLY\n" + "\n" + "difficult to chew");
             al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
-            al.add("\n" + "\n" + "");
 
 
 
@@ -129,7 +112,7 @@ public class articleView extends AppCompatActivity {
                     arrayAdapter.notifyDataSetChanged();
                     Log.d("LIST", "notified");
                     i++; */
-                    Intent intent = new Intent(articleView.this, MainActivity.class);
+                    Intent intent = new Intent(articleView.this, EinsteinsOwl.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     Toast.makeText(articleView.this, "All done!" +
                             "", Toast.LENGTH_SHORT).show();

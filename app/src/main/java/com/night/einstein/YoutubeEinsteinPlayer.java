@@ -60,50 +60,10 @@ public class YoutubeEinsteinPlayer extends YouTubeBaseActivity {
 
 
 
-      /*  button = findViewById(R.id.btn1);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(YoutubeEinsteinPlayer.this, YoutubeEinsteinPlayer.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        }); */
-        btnOwl = findViewById(R.id.btn4);
-        btnOwl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(YoutubeEinsteinPlayer.this, EinsteinsOwl.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
 
-      buttonWords = findViewById(R.id.btn2);
-        buttonWords.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(YoutubeEinsteinPlayer.this, articleView.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
-        buttonArticle = findViewById(R.id.btn3);
-        buttonArticle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(YoutubeEinsteinPlayer.this, ArticleActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
 
 
     }
-    @Override
-    public void onBackPressed() {
-       /* Intent intent = new Intent(YoutubeEinsteinPlayer.this, YoutubeEinsteinPlayer.class);
-        startActivity(intent); */
-        }
+
     }
 

@@ -1,5 +1,6 @@
 package com.night.einstein.courses.Philosophy.contentsPhilosophy;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.night.einstein.R;
 import com.night.einstein.courses.Philosophy.contentsPhilosophy.Fragments.ArgumentsLogic;
@@ -34,7 +36,6 @@ public class PhilosophyIntroLogic extends AppCompatActivity {
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
         viewPager.setCurrentItem(0);
-
 
     }
 

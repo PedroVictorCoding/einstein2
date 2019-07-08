@@ -26,7 +26,6 @@ import com.github.zagum.expandicon.ExpandIconView;
 import com.night.einstein.EinsteinsOwl;
 import com.night.einstein.InProgress;
 import com.night.einstein.R;
-import com.night.einstein.home.FragmentController;
 
 public class HistoryIntroActivity extends AppCompatActivity implements GestureDetector.OnGestureListener{
 
@@ -49,7 +48,7 @@ public class HistoryIntroActivity extends AppCompatActivity implements GestureDe
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HistoryIntroActivity.this, FragmentController.class);
+                Intent intent = new Intent(HistoryIntroActivity.this, EinsteinsOwl.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 overridePendingTransition(0, 0);
                 startActivity(intent);

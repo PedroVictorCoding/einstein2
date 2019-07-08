@@ -73,7 +73,10 @@
     <string name="in_progress">In Progress</string>
     <string name="physicsVote">0</string>
     <string name="introduction_to_geometry">Introduction to Geometry</string>
-
+    <string name="more_tools">More Tools</string>
+    <string name="watch_videos_by_youtube">Watch Videos by Youtube</string>
+    <string name="all_done">All Done!</string>
+    <string name="games">Games</string>
 
 
 </resources>

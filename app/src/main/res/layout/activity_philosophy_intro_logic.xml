@@ -3,26 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical">
+    android:background="@drawable/difficulty_gradient_intermediente">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:text="Logic"
-        android:textSize="50sp"
-        android:gravity="center"
-        android:textColor="@android:color/white"
-        tools:ignore="HardcodedText" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_marginTop="220dp"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.v4.view.ViewPager>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logic"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+
 
 
 <!--

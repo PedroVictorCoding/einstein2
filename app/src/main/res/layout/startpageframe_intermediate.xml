@@ -8,6 +8,7 @@
     tools:context=".courses.Philosophy.PhilosophyIntroActivity">
 
 
+
     <ImageView
         android:id="@+id/courseImg"
         android:layout_width="match_parent"
